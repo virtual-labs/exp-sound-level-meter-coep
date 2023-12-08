@@ -2,38 +2,67 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Acoustic amplifier output is generally specified in terms of its",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "acoustic PWL",
+        "b": "acoustic SPL",
+        "c": "electrical wattage",
+        "d": "loudness"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
+
+	
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Loudness level is the SPL at",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "low frequency of 100 Hz",
+        "b": "frequency of 1000 Hz",
+        "c": "high frequency of 10000 Hz",
+        "d": "none of the above"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },	
+ 
+    {
+      "question": "The response of the sound level meter is weighted suitably so as to provide",
+      "answers": {
+        "a": "a response similar to that of the human ear",
+        "b": "linearised response at different frequencies",
+        "c": "frequency spectra at different frequencies",
+        "d": "all of the above"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+  
+	
+	{
+      "question": "Audio-frequency range lies",
+      "answers": {
+        "a": "between 20000 and 30000 Hz",
+        "b": "between 16 and 20000 Hz",
+        "c": "above 40000 Hz",
+        "d": "around 1000 Hz"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "A noise source of 70 dB at 1 kHz has a loudness level of ____Phons",
+      "answers": {
+        "a": "80",
+        "b": "8",
+        "c": "7",
+        "d": "70"
+      },
+      "correctAnswer": "d",
       "difficulty": "beginner"
     }
+	
+ 
   ]
 }

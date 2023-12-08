@@ -2,38 +2,67 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Decibel is a unit of ______.",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "sound pressure level only",
+        "b": "any quantity in which the ratio of two numbers is 2.0.",
+        "c": "any quantity which is represented by the natural logarithm of the measured quantity with respect to the reference quantity. ",
+        "d": "any quantity which is represented as 10 times the logarithm of the measured quantity with respect to the reference signal."
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+
+	
+    {
+      "question": "Two automobile whistles of 100 dB are blown at the same time. Their resultant SPL would be ",
+      "answers": {
+        "a": "100 dB",
+        "b": "203 dB",
+        "c": "103 dB",
+        "d": "110 dB"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },	
+ 
+    {
+      "question": "Zero decibel SPL represents",
+      "answers": {
+        "a": "the lowest pressure fluctuation normally discernible by human beings",
+        "b": "zero acoustic pressure",
+        "c": "zero acoustic power",
+        "d": "none of the above"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
-    {
-      "question": "This is a Sample Question 2?",
+  
+	
+	{
+      "question": "The SPL corresponding to one atmospheric pressure (1.013 bar) is",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "194 dB",
+        "b": "150 dB",
+        "c": "174 phons",
+        "d": "150 phons"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "The sound pressure level of a sound source at double the distance would",
+      "answers": {
+        "a": "become one-half",
+        "b": "become one-quarter",
+        "c": "be reduced by 6 dB",
+        "d": "be reduced by 3 dB"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
     }
+	
+ 
   ]
 }
