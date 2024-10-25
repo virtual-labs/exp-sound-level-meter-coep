@@ -22,4 +22,3 @@ A frequency weighting network is used in the circuit to provide a response simil
 
 ![3](images/figure3.jpg)
 
-![4](images/figure4.png)

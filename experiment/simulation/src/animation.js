@@ -5,6 +5,7 @@ var frequency;
 var ArrayJson=[];
 var TimeMasterJson={};
 function animation(frequencySelect,soundSelect){
+	
 	$("#canvas-div").html('');	
     $("#centerText1").html('IDENTIFY SOUND LEVEL OF COMMON SOUNDS');
     $("#centerText2").html('CONFIGURATION');
@@ -79,6 +80,7 @@ function pauseAudio(){
 }
 
 start.click(function(){
+	$("#sound").children(":selected").css("background-color","#f7dddd").prop('disabled',true);
 	if(soundDB==20){
 		srcOfSound="Sound of Whisper";	
 			placeImg=paper.image("images/whispering.gif",(x-80),(y-35),800,700);
