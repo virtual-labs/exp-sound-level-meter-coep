@@ -172,7 +172,7 @@ id=0;
 					{
 					if (id <= 3) {
 						if (soundAns == soundDB) {
-							$("#modelMsg").html("<b class='boldTextGreen'>Correct Answer</b>");
+							$("#modelMsg").html("<b class='boldTextGreen'>Correct Answer. Select another source of sound </b>");
 							$("#soundAnswer").prop('hidden',true);
 							id=0;
 							
@@ -191,7 +191,7 @@ id=0;
 //						flow = flowAns.toFixed(2);
 						if (soundAns == soundDB) {
 							
-							$("#modelMsg").html("<b class='boldTextGreen'>Correct Answer</b>");
+							$("#modelMsg").html("<b class='boldTextGreen'>Correct Answer. modelMsg").html("<b class='boldTextGreen'>Correct Answer. Select another source of sound</b>");
 							$("#soundAnswer").prop('hidden',true);
 							
 							addToMasterJSON();

@@ -60,8 +60,8 @@ function tableCreate(masterJson) {
 	}
 	
 	$("#finish").click(function() {
-		alert("Experiment successfully completed");
-//		$("#modelMsg").html('<img src="images/cong.gif" class="img-fluid" >');
+//alert("Experiment successfully completed");
+			$("#modelMsg").html('<img src="images/cong.gif" class="img-fluid" >');
 	});
 }
 
