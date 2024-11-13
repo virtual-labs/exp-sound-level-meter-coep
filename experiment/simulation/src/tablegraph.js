@@ -1,6 +1,6 @@
 function tablegraph(){
 	$("#procedure,#simDemo").prop("hidden",true);
-	
+	$("#noteV").prop("hidden",true);
 	$("#main-div-conf,#canvas-div,#tableDesign").html("");
 	$("#canvas-div").attr("style", "");
 	 $("#centerText1").html(' WORKING');
@@ -47,7 +47,7 @@ function table2()
 		+ '  <th><center>Sr.No</center></th>'
 		+ '  <th scope="col"><center>Source of Sound</center></th>'
 //		+ '   <th scope="col"><center >Frequency(Hz)</center></th>'
-		+ '   <th scope="col"><center >Sound Level (dB)</center></th>'
+		+ '   <th scope="col"><center >Sound Level (dBA)</center></th>'
 		+ '   </tr>'
 		+ '  </thead>'
 		+ '   <tbody>'
@@ -246,7 +246,7 @@ Highcharts.chart('graph2', {
 });
  htm='<div class="row">'
 		  htm+='<div class="col-sm-12" id="buttonDiv">'
-	   +'<button type="button" style="padding: 10px; "  class="btn btn-danger btnStyle" id="result" ><b> SHOW RESULT </b></button>' 
+	   +'<button type="button" style="padding: 10px; "  class="btn btn-danger btnStyle" id="result" ><b> RESULT </b></button>' 
 	    +'</div>'
 		  +'</div>'
 		 $("#graph2").append(htm);

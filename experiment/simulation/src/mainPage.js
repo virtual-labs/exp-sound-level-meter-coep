@@ -7,7 +7,7 @@ function mainPage(){
      
       $("#centerText1").html(' SOURCE OF SOUND');
       $("#centerText2").html('APPLICATIONS');
-      var htm = '<img src="images/sLm.png" class="img-fluid" >'
+      var htm = '<img src="images/slm1.png" class="img-fluid" >'
       $("#canvas-div").html(htm);
       $("#tableDesign").html("");
 //      animation();

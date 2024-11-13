@@ -137,7 +137,7 @@
 <!--   <source src="images/simulation.mp4" type="video/mp4"> -->
   
 <center><video id="simVideo" width="90%" controls>
-    <source src="images/simulation.mp4" type="video/mp4">
+    <source src="images/sound.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video></center>
   
@@ -155,7 +155,7 @@
 
 <div class="col-lg-6" id="main-div" style='font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;'>
 	             <div class="panel panel-primary">
-	      			<div class="panel-heading " ><center id="centerText1"> SOUND LEVEL METER DIAGRAM</center>
+	      			<div class="panel-heading " ><center id="centerText1"> DIAGRAM</center>
 	      			</div>
 	      			
 	      			<div class="panel-body" id="canvas-div" style="border-style: double;  margin: 10px;">
@@ -231,8 +231,8 @@ $("#simDemo").on("click", function(){
 	var video = document.getElementById("simVideo");
 
 	// Define the start and end skip times (in seconds)
-	var skipStart = 10;  // Skip the first 5 seconds
-	var skipEnd = 10;    // Skip the last 5 seconds
+	var skipStart = 0;  // Skip the first 5 seconds
+	var skipEnd = 0;    // Skip the last 5 seconds
 
 //	video.onloadedmetadata = function() { 
 	    // Get the duration of the video
