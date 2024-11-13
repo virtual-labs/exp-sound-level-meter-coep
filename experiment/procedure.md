@@ -1,21 +1,23 @@
 ### Procedure
 
-##### Prerequisite : 
-- Answer all the questions and click on "Submit Test" button
-
-- Click on Next level button which will be appeared in place of submit button below the test
-
 ##### Simulator :
-1. Select frequency and source of sound
 
-2. Click on "MEASUREMENT OF SOUND LEVEL" button
+Answer all the questions and click on "Submit Test" button
 
-3. Click on "START" button and observe dB level of 
+1. Observe frequency and reference sound pressure
 
-4. Click on STOP button
+2. Select sound pressure and calculate sound pressure level 
 
-5. Enter the sound level reading(dB) in textbox and click on Submit 
+3. repeat steps for all sound pressure 
 
-6. Change the source of sound and follow the above steps
+4. Click on "GO TO NEXT LEVEL" button for applications 
 
-7. Click on "FINISH" button
+5. Select source of sound and Click on "MEASUREMENT OF SOUND LEVEL" button
+
+6. Press on "START" observe sound pressure level 
+
+7. repeat step 5 and 6 for all applications 
+
+8. Click on "GO TO NEXT LEVEL" button for tables and graphs
+
+9. Press "RESULT" button for performance assessment

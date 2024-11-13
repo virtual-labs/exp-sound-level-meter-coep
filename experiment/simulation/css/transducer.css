@@ -62,7 +62,7 @@ hr.new3 {
 /* 	box-shadow: 0 5px #999; */
 }
 #questionDiv .queno
-{ background-color:#31717b; 
+{ background-color:#132d50; 
 padding:12px; color:#fff; 
 font-size: 20px;
  border-radius: 10px; 
@@ -91,9 +91,9 @@ font-size: 20px;
     font-size: 18px;
 }
 .panel-primary>.panel-heading,.card-header,.modal-header {
-background-color:#31717b;
+background-color:#132d50;
 	color:#fff;
-	border-color:blue;	
+	border-color:grey;	
 }	
 .boldTextBlue{
 	color:Blue;
