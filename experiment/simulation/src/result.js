@@ -266,10 +266,10 @@ function result(){
 		});
 		
 		
-		console.log(resultMasterJson.question.correctQuestion);
+		//console.log(resultMasterJson.question.correctQuestion);
 		CorrectAnswer=parseInt(resultMasterJson.question.correctQuestion);
 		var tempBasicKnowledge=parseInt((CorrectAnswer/6)*100);
-		console.log("temp "+tempBasicKnowledge);
+		//console.log("temp "+tempBasicKnowledge);
 		
 		
 		if(tempBasicKnowledge>=60){
@@ -290,7 +290,7 @@ function result(){
 			}
 		var congCounterTotal=parseInt(resultMasterJson.working.workingCount);
 		var tempCalPer=parseInt((9/congCounterTotal)*100);
-		console.log("tempCalPer "+tempCalPer);
+		//console.log("tempCalPer "+tempCalPer);
 		if(tempCalPer>=60){
 			 var str=''
 				 +' <div class="alert alert-success attainedText">'

@@ -132,7 +132,7 @@ resultMasterJson ={};
 	             tempJson={};
 					tempJson.correctQuestion=ansCount;
 					resultMasterJson.question=tempJson;
-					console.log(resultMasterJson);
+				//	console.log(resultMasterJson);
 	             working();
 //				mainPage();
 //				  mimic();

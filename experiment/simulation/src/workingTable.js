@@ -60,7 +60,7 @@ function tableCreate1(masterJson) {
 		 $("#soundPressure").prop("disabled",true);
 		 $("#finish").prop("hidden",false); 
 		 $("#modelMsg").html('<b style="color:#a94442">GO TO NEXT LEVEL .</b>');
-		 console.log(masterJson);
+		 //console.log(masterJson);
 		 
 	}
 //	
