@@ -251,7 +251,7 @@ Highcharts.chart('graph2', {
 		  +'</div>'
 		 $("#graph2").append(htm);
 		 $("#result").on("click", function(){
-	console.log("dfgfg");
+	//console.log("dfgfg");
 	result();
 });
 
