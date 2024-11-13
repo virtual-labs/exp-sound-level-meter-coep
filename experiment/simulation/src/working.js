@@ -140,8 +140,8 @@ function working(){
 //				   temp_p="2 x 10<sup>-4</sup>";
 //			   }
 			   $("#soundP").prop("hidden",false); 
-    	    console.log("soundPressure1 "+soundPressure1);
-    	    console.log("p "+p);
+    	   // console.log("soundPressure1 "+soundPressure1);
+    	   // console.log("p "+p);
     	    $("#errorMsg").prop("hidden",true);
     	    $("#soundPressure").prop("disabled",true);
 		   $("#soundPressure option[value="+soundPressure1+"]").css("background-color","#dacecf");
@@ -154,11 +154,11 @@ function working(){
 			 	ansCount++;
 				$("body").css("padding","0px 0px 0px 0px");
 				$("#modelMsg").css("font-size", "larger");
-				console.log("soundPressure1 "+soundPressure1);
+			//	console.log("soundPressure1 "+soundPressure1);
 			    p_ref1=parseFloat(p_ref);
 			    var temp2=parseFloat(p/p_ref1);
 				var temp=parseFloat(20*Math.log10(temp2));
-     			console.log("temp "+temp);
+     		//	console.log("temp "+temp);
      				
      		   soundAns=	parseFloat($("#soundLevel1").val());
 			   var flowAns=temp;
@@ -232,11 +232,11 @@ function working(){
 					tempJson.ans=temp;
 					arrayJson.push(tempJson);
 					masterJson.demo = arrayJson;
-					console.log(masterJson);
+				//	console.log(masterJson);
 					tempJson={};
 					tempJson.workingCount=ansCount;
 					resultMasterJson.working=tempJson;
-					console.log(resultMasterJson);
+				//	console.log(resultMasterJson);
 					tableCreate1(masterJson);
 //					tempJson={};
 //					tempJson.stdPulsesCount=ansCount;

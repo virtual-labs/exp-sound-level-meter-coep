@@ -60,7 +60,7 @@ function tableCreate(masterJson) {
 	if ( masterJson.demo.length== 7) {
 		$("#finish1").prop("hidden", false);
 		$("#sound").prop("disabled",true);
-		console.log(masterJson);
+		//console.log(masterJson);
 	}
 	
 	$("#finish1").click(function() {
