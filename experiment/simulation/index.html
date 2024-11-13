@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 <title> Sound Level Meter </title>
-<meta charset="ISO-8859-1">
+<!-- <meta charset="ISO-8859-1"> -->
+ <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" >
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -13,6 +14,7 @@
 	<link rel="stylesheet" href="css/mainPage.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/transducer.css">
+	<link rel="stylesheet" href="css/result.css">
 </head>
 
 <style>
@@ -21,8 +23,27 @@
  src: url('font/digital-7.ttf');
 }
 
+.textheadingTable{
+               background-color: #523d3d;
+    font-size: large;
+    padding: 6px;
+    color: #fff;
+    margin-bottom: 10px;
+        }
+        
+ .blink{
+ 
+ font-weight: bold;
+    border-style: dashed;
 
-
+    animation: blinker 1.5s linear infinite;
+    color: red;
+    font-family: sans-serif;
+    font-weight: bold;
+    background: #ebe2d4;
+    padding: 7px 20px;
+    border-radius: 15px;
+ }
 </style>
 
 
@@ -31,7 +52,7 @@
 <header>
 		<img class="Coeplogo" src='images/COEPlogo.png' />
 		<img class="VlabLogo" src='images/vlablogo.jpg' />
-		<span id="colgName">COEP Technological University</span>		
+		<span id="colgName">COEP TECHNOLOGICAL UNIVERSITY PUNE</span>		
 		
 	</header>
 	
@@ -46,20 +67,20 @@
 
 <br>
 
-<div  class=" container-fluid" > 
- <div class="row FirstRowtimer " id="selectMethod">
-      <div class="col-sm-9">
-      </div>
-     
-      <div class="col-sm-3">
-      <button type="button" class="btn btn-danger" id="procedure" data-toggle="modal" data-target="#readProcedureModal"><b>READ PROCEDURE</b></button> 
- 	  </div>
-<!--  	  <div class="col-sm-2" style="margin-top: 10px;margin-bottom: 10px"> -->
-<!--  		<span  id="hour" class="timer">00</span>:<span id="minute" class="timer">00</span>:<span class="timer" id="second">00</span> 	     	 -->
-<!--  	  </div>     -->
- </div> 
-</div>
 
+<div  class="row container-fluid" style=" margin-top: -10px; ">	
+	<div  class="col-sm-12" > 
+	<button type="button" class="btn btn-danger  btn1" id="saveAsJpg"  hidden><b>Download Result</b></button>    
+	<!--<button class="btn btn-danger btn1" id="result" hidden><b> Result</b></button> -->
+     <button type="button" class="btn btn-danger btn1" data-toggle="modal"  style="margin-top:5px;margin-bottom:5px;" data-target="#readProcedureModal1" id = "simDemo">
+	 <b> Simulation Demo</b>
+	</button>
+	  <button type="button" class="btn btn-danger button1 btn1" id="procedure" data-toggle="modal" data-target="#readProcedureModal"><b>Procedure</b></button> 
+ 	 
+ 	<span class="btn1 blinking-note" id="noteV" style="float:left"> Note : " Ensure your device volume is set to the maximum level "</span>
+		
+	</div>
+ </div>
 
 
 <div id="readProcedureModal" class="modal fade" role="dialog">
@@ -71,27 +92,27 @@
         <h4 class="modal-title"><center>PROCEDURE</center></h4>
       </div>
       <div class="modal-body">
-    
+  
 
-<center id="modelTitle">Prerequisite</center>
- <ol>
-	<li>Read and understand all instructions and questions provided</li>
-	<li>Answer all questions and click on the "Submit Test" button</li>
-	<li>Upon successful completion, click on the "Next Level" button which will appear in place of the "Submit" button</li>
-</ol>
+<p class="textProcedure"> Answer all the questions and click on "Submit Test" button<br><br>
 
+1. Observe frequency and reference sound pressure<br>
 
-<center id="modelTitle">Simulator</center>
+2. Select sound pressure and calculate sound pressure level <br>
 
-<ol>
-	<li>Select frequency and source of sound</li>
-	<li>Click on "MEASUREMENT OF SOUND LEVEL" button</li>
-	<li>Click on "START" button and observe dB level of sound</li>	
-	<li>Click on STOP button</li>
-	<li>Enter the sound level reading(dB) in textbox and click on Submit button</li>
-	<li>Change the source of sound and follow the above steps</li>
-	<li>Click on "FINISH" button</li>
-	</ol>	
+3. repeat steps for all sound pressure <br>
+
+4. Click on "GO TO NEXT LEVEL" button for applications <br>
+
+5. Select source of sound and Click on "MEASUREMENT OF SOUND LEVEL" button<br>
+
+6. Press on "START" observe sound pressure level <br>
+
+7. repeat step 5 and 6 for all applications <br>
+
+8. Click on "GO TO NEXT LEVEL" button for tables and graphs<br>
+
+9. Press "RESULT" button for performance assessment<br>	</p>
 </div> 
 
       <div class="modal-footer">
@@ -101,58 +122,150 @@
 
   </div>
 </div>
+<div id="readProcedureModal1" class="modal fade" role="dialog">
+  <div class="modal-dialog  modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">DEMO</h3>
+<!--         <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+      </div>
+      <div class="modal-body">
+ 
+<!--     <video width="90%" id="simVideo" controls> -->
+<!--   <source src="images/simulation.mp4" type="video/mp4"> -->
+  
+<center><video id="simVideo" width="90%" controls>
+    <source src="images/simulation.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video></center>
+  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 
+<div  class="row container-fluid" id="mainDiv" style=" margin-top: -20px;    margin-bottom: 20px;">
 
-
-<div  class="row container-fluid" id="mainDiv">
-
-<div class="col-lg-6" id="main-div">
+<div class="col-lg-6" id="main-div" style='font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;'>
 	             <div class="panel panel-primary">
-	      			<div class="panel-heading " id="panelHeading2"><center id="centerText1"> SOUND LEVEL METER DIAGRAM</center>
+	      			<div class="panel-heading " ><center id="centerText1"> SOUND LEVEL METER DIAGRAM</center>
 	      			</div>
-	      			<label  id="counter"></label>
-	      			<div class="panel-body" id="canvas-div" >
+	      			
+	      			<div class="panel-body" id="canvas-div" style="border-style: double;  margin: 10px;">
 	      			<img src="images/soundMeterParts1.jpg" class="img-fluid " width="1000" height="800">
+	      			</div>
+	      			<div class="panel-body" id="graph1">
 	      			</div>
 
 	   			</div>
 	       </div>
 	<div class="col-lg-6" id="canvas">
 				<div class="panel panel-primary">
-	      			<div class="panel-heading " id="panelHeading1"><center id="centerText ">BASIC KNOWLEDGE</center>
+	      			<div class="panel-heading " ><center id="centerText2">BASIC KNOWLEDGE</center>
 	      			</div>
 	     			<div class="panel-body" id="main-div-conf">
 <!-- 	     			<script>basicKnowledge();</script> -->
 	     			</div>
-	     			<div class="row" id="tableDesign">
+	     			<div class="row" id="tableDesign" style="    padding: 10px;">
 	     			
 	     			</div>
+	     			<div class="panel-body" id="graph2">
+	      			</div>
 	     			
 	     		</div>
 	   	</div>
 	        
 	  </div>      
+<div  class="container-fluid resultMainPage" id="main-divResult" style="margin-bottom:60px;font-size:16px;" hidden>
 
+	</div>
 	<footer>
-Copyrights &copy; COEP - Virtual Lab
+Copyrights &copy; COEPTECH - Virtual Lab
 </footer>
 </body>
 
 <!-- https://code.jquery.com/jquery-3.5.1.js -->
 <script type="text/javascript" src="lib/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script type="text/javascript" src="lib/raphael.js"></script>
 <script type="text/javascript" src="lib/raphael.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
 <script type="text/javascript" src="src/questionJson.js"></script>
 <script type="text/javascript" src="src/questions.js"></script>
+<script type="text/javascript" src="src/working.js"></script>
 <script type="text/javascript" src="src/mainPage.js"></script>
-<script type="text/javascript" src="src/animation.js"></script>
-<script type="text/javascript" src="src/table.js"></script>
+<script type="text/javascript" src="src/workingTable.js"></script>
 
+<script type="text/javascript" src="src/table.js"></script>
+<script type="text/javascript" src="src/tablegraph.js"></script>
+<script type="text/javascript" src="src/animation.js"></script>
+<script type="text/javascript" src="src/result.js"></script>
+
+<script>
+function isAlphabetical(input) {
+    return /^[A-Za-z]+$/.test(input);
+}
+</script>
+<script>
+
+$('#readProcedureModal1').click(function(){
+	 $('video').each(function(){
+		    $(this).get(0).pause();
+		  })
+	})
+
+$("#simDemo").on("click", function(){
+	
+	var video = document.getElementById("simVideo");
+
+	// Define the start and end skip times (in seconds)
+	var skipStart = 10;  // Skip the first 5 seconds
+	var skipEnd = 10;    // Skip the last 5 seconds
+
+//	video.onloadedmetadata = function() { 
+	    // Get the duration of the video
+	    var videoDuration = video.duration;
+
+	    // Ensure the video plays between skipStart and (duration - skipEnd)
+	    video.currentTime = skipStart;
+
+	    // Event listener to pause the video when it reaches the end limit (video duration - skipEnd)
+	    video.ontimeupdate = function() {
+	        if (video.currentTime >= videoDuration - skipEnd) {
+	            video.pause();
+				video.currentTime = skipStart;
+	        }
+	    };
+
+	    // Prevent seeking outside the allowed time range
+	    video.addEventListener('seeking', function(event) {
+	        // If seeking before the start time or after the allowed end time, reset the current time
+	        if (video.currentTime < skipStart) {
+	            video.currentTime = skipStart;
+	        } else if (video.currentTime > videoDuration - skipEnd) {
+	            //video.currentTime = videoDuration - skipEnd;
+				video.currentTime = skipStart;
+	        }
+	    });
+//	};
+	
+	video.play();
+})
+
+
+
+</script>
 
 </html>
