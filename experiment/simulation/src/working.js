@@ -19,7 +19,7 @@ function working(){
       
       +'</div>'
       +'<div class="col-sm-5"  >'
-      +'<center class=" frq">  <b>  p<sub>ref</sub> : 0.0002 &micro;bar  </b></center>'     
+      +'<center class=" frq">  <b>  P<sub>ref</sub> : 0.0002 &micro;bar  </b></center>'     
       +'</div>'
       +'</div>'  
       +'<br>'
@@ -175,7 +175,7 @@ function working(){
 							
 							
 							 $("#modelMsg").css("color", "#a94442");
-							$("#modelMsg").html(" <b>Select another sound pressure value.</b> ");
+							$("#modelMsg").html(" <b>Select another sound pressure value</b> ");
 							
 							$("#soundP").prop("hidden",true);
 							$("#checkConfg").prop("hidden",false);	
@@ -189,7 +189,7 @@ function working(){
 						} else if (flowAns != soundAns) {
 							
 							 $("#modelMsg").css("color", "red");
-						$("#modelMsg").html("<b>Entered value is incorrect.Try again .</b> ");
+						$("#modelMsg").html("<b>Entered value is incorrect.Try again</b> ");
 						
 						}
 
@@ -205,7 +205,7 @@ function working(){
 							
 							
 							$("#modelMsg").css("color", "#a94442");
-							$("#modelMsg").html("<b>Select another sound pressure value.  </b> ");
+							$("#modelMsg").html("<b>Select another sound pressure value  </b> ");
 							$("#soundP").prop("hidden",true);
 							$("#checkConfg").prop("hidden",false);
 							$("#soundPressure").prop("disabled",false);

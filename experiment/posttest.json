@@ -30,7 +30,7 @@
       "question": "The response of the sound level meter is weighted suitably so as to provide",
       "answers": {
         "a": "a response similar to that of the human ear",
-        "b": "linearised response at different frequencies",
+        "b": "linearized response at different frequencies",
         "c": "frequency spectra at different frequencies",
         "d": "all of the above"
       },

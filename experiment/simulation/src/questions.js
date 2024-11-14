@@ -115,7 +115,7 @@ resultMasterJson ={};
 						 data.corrAns = dataQues;
 //						 console.log(data);
 						 
-						 $("#modelMsg").html("<b class='boldTextGreen'>Test submitted successfully .<br> Number of Correct Answers  : " + ansCount+"</b>");
+						 $("#modelMsg").html("<b class='boldTextGreen'>Test submitted successfully .<br> Number of correct answers  : " + ansCount+"</b>");
                          $('#nextLevelConfig').prop('hidden',false);
 						 
 						    $('#testSubmit').prop('hidden',true); 
