@@ -1,7 +1,7 @@
 ### Aim 
 Understand operation of sound level meter
 
-### Objective
+### Objectives
 - Understand working of sound level meter
-- calculate sound pressure level for different sound sources
+- Calculate sound pressure level for different sound sources
 - Observe sound pressure level for different sound sources
