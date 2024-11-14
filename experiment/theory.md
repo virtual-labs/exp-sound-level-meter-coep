@@ -3,11 +3,11 @@ Sound waves or acoustic pulses are vibrations that consist of a succession of ra
 
 ### Characteristics of sound
 Sound is characterised by the following parameters: 
-- Its intensity in W/m² or its pressure in ubar, 
-- Its frequency in cycles per second or Hz,
-- The nature of noise which may be either continuous or impulsive,
+- Its intensity in W/m² or its pressure in &micro;bar 
+- Its frequency in cycles per second or Hz
+- The nature of noise which may be either continuous or impulsive
 - Its loudness or loudness level
-- Its noise rating which is also called annoyance rating based on the sound pressure level and frequency.
+- Its noise rating which is also called annoyance rating based on the sound pressure level and frequency
 
 ![1](images/figure1.jpg)
 
