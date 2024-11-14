@@ -176,7 +176,7 @@ Highcharts.chart('graph2', {
         type: 'scatter'
     },
     title: {
-        text: 'Sound of sound v/s Sound level (dBA)',
+        text: 'Source of sound v/s Sound level (dBA)',
         style: {
             color: '#333333',   // Color for x-axis title
             fontWeight: 'bold',
