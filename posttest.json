@@ -1,0 +1,68 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Acoustic amplifier output is generally specified in terms of its",
+      "answers": {
+        "a": "acoustic PWL",
+        "b": "acoustic SPL",
+        "c": "electrical wattage",
+        "d": "loudness"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+
+	
+    {
+      "question": "Loudness level is the SPL at",
+      "answers": {
+        "a": "low frequency of 100 Hz",
+        "b": "frequency of 1000 Hz",
+        "c": "high frequency of 10000 Hz",
+        "d": "none of the above"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },	
+ 
+    {
+      "question": "The response of the sound level meter is weighted suitably so as to provide",
+      "answers": {
+        "a": "a response similar to that of the human ear",
+        "b": "linearized response at different frequencies",
+        "c": "frequency spectra at different frequencies",
+        "d": "all of the above"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+  
+	
+	{
+      "question": "Audio-frequency range lies",
+      "answers": {
+        "a": "between 20000 and 30000 Hz",
+        "b": "between 16 and 20000 Hz",
+        "c": "above 40000 Hz",
+        "d": "around 1000 Hz"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "A noise source of 70 dB at 1 kHz has a loudness level of ____Phons",
+      "answers": {
+        "a": "80",
+        "b": "8",
+        "c": "7",
+        "d": "70"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    }
+	
+ 
+  ]
+}
