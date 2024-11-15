@@ -71,8 +71,10 @@ function dBCounter(){
 			else if(counter==soundDB){
 				clearInterval(myTimer);
 				addToMasterJSON();
-				  tableCreate(masterJson1);		
+				  tableCreate(masterJson1);	
+				if(masterJson1.demo.length < 7){
 				  $("#sound").prop("disabled",false);
+				}
 				  $("#submitconfig").prop("hidden",true);
 				  $("#submitconfig").prop("disabled",false);
 				  
