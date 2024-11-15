@@ -57,7 +57,7 @@ function tableCreate(masterJson) {
 	$("#tableDesign").html(tableMainDiv);
 	
 	
-	if ( masterJson.demo.length== 7) {
+	if ( masterJson.demo.length>= 7) {
 		$("#finish1").prop("hidden", false);
 		$("#sound").prop("disabled",true);
 		//console.log(masterJson);
