@@ -366,7 +366,7 @@ function result(){
 	        name: '',
 	        data: [
 	            { name: 'Basic Knowledge', y: tempBasicKnowledge },
-	            { name: 'Configuration', y: tempCalPer },
+	            { name: 'Working', y: tempCalPer },
 	            { name: 'Application', y: 100 },
 	            { name: 'Mimic', y: 100 },
 	          

@@ -111,22 +111,22 @@ $("#mainMSgError").html("Select Sound of Source");
 			playAudio();
 }else if(soundDB==40){
 	  $("#sound").prop("disabled",true);
-	srcOfSound="Rusling of Leaves";
+	srcOfSound="Rustling of Leaves";
 	placeImg=paper.image("images/leaves.gif",(x-80),(y-35),800,700);
 	 playAudio();
 }else if(soundDB==60){
 	  $("#sound").prop("disabled",true);
-	srcOfSound="TypeWriter";
+	srcOfSound="Typewriter";
 	placeImg=paper.image("images/typeWriter.gif",(x-80),(y-35),800,700);
 	 playAudio();
 }else if(soundDB==80){
 	$("#sound").prop("disabled",true);
-	srcOfSound="Light Automobile";
+	srcOfSound="Light Automobiles";
 	placeImg=paper.image("images/lightAutomobile.gif",(x-80),(y-35),800,700);
 	 playAudio();
 }else if(soundDB==100){
 	$("#sound").prop("disabled",true);
-	srcOfSound="Airport";
+	srcOfSound="Airport Noise";
 	placeImg=paper.image("images/airport.gif",(x-80),(y-35),800,700);
 	 playAudio();
 }else if(soundDB==101){
