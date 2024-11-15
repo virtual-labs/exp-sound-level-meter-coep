@@ -30,7 +30,7 @@ function mainPage(){
 	   +'<select  class="form-control selectConf" id="sound"  style="height:auto;">'
 	   +'<option value="-1">--- Select source of sound --- </option>'
 	   +'<option value="20" >Sound of Wisper</option>'
-	   +'<option value="40">Rusling of Leaves</option>'
+	   +'<option value="40">Rustling of Leaves</option>'
 	   +'<option value="60">Typewriter</option>'
 	   +'<option value="80">Light Automobiles</option>'
 	   +'<option value="100">Airport Noise</option>'
