@@ -12,7 +12,7 @@ function tableCreate(masterJson) {
 		+ '  <th><center>Sr.No</center></th>'
 		+ '  <th scope="col"><center>Source of Sound</center></th>'
 //		+ '   <th scope="col"><center >Frequency(Hz)</center></th>'
-		+ '   <th scope="col"><center >Sound Level (dB)</center></th>'
+		+ '   <th scope="col"><center >Sound Level (dBA)</center></th>'
 		+ '   </tr>'
 		+ '  </thead>'
 		+ '   <tbody>'
@@ -57,9 +57,9 @@ function tableCreate(masterJson) {
 	$("#tableDesign").html(tableMainDiv);
 	
 	
-	if ( masterJson.demo.length>= 7) {
+	if ( masterJson.demo.length== 7) {
 		$("#finish1").prop("hidden", false);
-		$("#sound").prop("disabled",true);
+		//$("#sound").prop("disabled",true);
 		//console.log(masterJson);
 	}
 	
